@@ -1,0 +1,1 @@
+function extinguish:tick
