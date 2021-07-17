@@ -1,15 +1,29 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-        "nbt": "{Inventory:[{tag:{display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"gray\",\"italic\":false}']}}}]}",
-        "flags": {
-            "is_on_fire": true
-        },
-        "player": {
-            "advancements": {
-                "extinguish:enter_fire_source": false
+[
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "nbt": "{Inventory:[{tag:{display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"gray\",\"italic\":false}']}}}]}",
+            "flags": {
+                "is_on_fire": true
+            },
+            "player": {
+                "advancements": {
+                    "extinguish:enter_fire_source": false
+                }
+            }
+        }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "minecraft:fire_resistance": {}
+                }
             }
         }
     }
-}
+]
