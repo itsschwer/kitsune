@@ -43,8 +43,5 @@
             "lava_cauldron",
             "lava"
         ]
-    ],
-    "rewards": {
-        "function": "extinguish:in_fire_source"
-    }
+    ]
 }
