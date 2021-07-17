@@ -1,0 +1,50 @@
+{
+    "display": {
+		"icon": {
+			"item": "minecraft:fire_charge"
+		},
+		"title": "Extinguish",
+		"frame": "goal",
+		"description": ["",{"text":"Debugging","color":"#C77AFF"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "schwer:root",
+    "criteria": {
+        "fire": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:fire"
+            }
+        },
+        "soul_fire": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:soul_fire"
+            }
+        },
+        "lava_cauldron": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:lava_cauldron"
+            }
+        },
+        "lava": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:lava"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "fire",
+            "soul_fire",
+            "lava_cauldron",
+            "lava"
+        ]
+    ],
+    "rewards": {
+        "function": "extinguish:in_fire_source"
+    }
+}
