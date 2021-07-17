@@ -1,15 +1,4 @@
 {
-    "display": {
-		"icon": {
-			"item": "minecraft:fire_charge"
-		},
-		"title": "Extinguish",
-		"frame": "goal",
-		"description": ["",{"text":"Debugging","color":"#C77AFF"}],
-		"show_toast": false,
-		"announce_to_chat": false
-	},
-	"parent": "schwer:root",
     "criteria": {
         "fire": {
             "trigger": "minecraft:enter_block",

@@ -1,0 +1,19 @@
+{
+    "display": {
+		"icon": {
+			"item": "minecraft:fire_charge",
+            "nbt": "{Enchantments:[{}]}"
+		},
+		"title": "Extinguish",
+		"frame": "goal",
+		"description": ["",{"text":"Extinguish","color":"#C77AFF"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "schwer:root",
+    "criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
