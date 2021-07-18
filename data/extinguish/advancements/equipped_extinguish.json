@@ -1,0 +1,60 @@
+{
+    "criteria": {
+        "head": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "head": {
+                            "nbt": "{Inventory:[{tag:{display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"gray\",\"italic\":false}']}}}]}"
+                        }
+                    }
+                }
+            }
+        },
+        "chest": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "chest": {
+                            "nbt": "{Inventory:[{tag:{display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"gray\",\"italic\":false}']}}}]}"
+                        }
+                    }
+                }
+            }
+        },
+        "legs": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "legs": {
+                            "nbt": "{Inventory:[{tag:{display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"gray\",\"italic\":false}']}}}]}"
+                        }
+                    }
+                }
+            }
+        },
+        "feet": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "feet": {
+                            "nbt": "{Inventory:[{tag:{display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"gray\",\"italic\":false}']}}}]}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "head",
+            "chest",
+            "legs",
+            "feet"
+        ]
+    ]
+}

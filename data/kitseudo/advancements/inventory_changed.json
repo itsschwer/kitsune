@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "change": {
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "rewards": {
+        "function": "kitseudo:inventory_changed"
+    }
+}
