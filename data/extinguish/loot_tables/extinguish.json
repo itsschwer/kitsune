@@ -14,6 +14,7 @@
                             "entity": "this",
                             "name": {
                                 "text": "Enchanted Scroll",
+                                "color": "yellow",
                                 "italic": false
                             }
                         },
@@ -28,6 +29,10 @@
                                 }
                             ],
                             "replace": false
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Enchantments:[{}]}"
                         }
                     ],
                     "conditions": [
