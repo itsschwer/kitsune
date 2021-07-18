@@ -1,6 +1,6 @@
 schedule function kitseudo:tick 1
 
-# Tag foxes named "kitseudo" to convert them into kitsune
-tag @e[type=fox,name="kitseudo",tag=!sks_kitsune] add sks_kitsune
-
+# Prepare for conversion
+execute as @e[type=fox,name="kitseudo",tag=!sks_kitsune] at @s run function kitseudo:kitsune_mark
+# Main Kitsune tick (also handles conversion)
 execute as @e[type=fox,tag=sks_kitsune] at @s run function kitseudo:kitsune_tick
