@@ -1,0 +1,32 @@
+{
+    "display": {
+		"icon": {
+			"item": "minecraft:blaze_powder"
+		},
+		"title": "Fire Kill",
+		"description": ["",{"text":"Debugging","color":"#C77AFF"}],
+		"show_toast": true,
+		"announce_to_chat": true
+	},
+    "parent": "extinguish:extinguish",
+    "criteria": {
+        "kill": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "flags": {
+                        "is_on_fire": true
+                    },
+                    "effects": {
+                        "minecraft:fire_resistance": {}
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "loot": [
+            "extinguish:extinguish"
+        ]
+    }
+}
