@@ -1,12 +1,12 @@
 {
     "display": {
 		"icon": {
-			"item": "minecraft:fire_charge",
+			"item": "minecraft:blaze_powder",
             "nbt": "{Enchantments:[{}]}"
 		},
 		"title": "Extinguish",
 		"frame": "goal",
-		"description": ["",{"text":"Extinguish","color":"#C77AFF"}],
+		"description": ["",{"text":"Grants Fire Resistance while on fire outside of a fire source","color":"#C77AFF","italic":true}],
 		"show_toast": false,
 		"announce_to_chat": false
 	},
