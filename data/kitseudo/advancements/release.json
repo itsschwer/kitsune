@@ -1,0 +1,28 @@
+{
+    "display": {
+		"icon": {
+			"item": "minecraft:fox_spawn_egg"
+		},
+		"title": "Free Spirit",
+		"description": ["",{"text":"Name a Kitsune ","color":"#C77AFF"},{"text":"release","color":"yellow","italic":true}],
+		"show_toast": true,
+		"announce_to_chat": true
+	},
+    "parent": "kitseudo:convert",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:name_tag"
+                    ],
+                    "nbt": "{display:{Name:'{\"text\":\"release\"}'}}"
+                },
+                "entity": {
+                    "type": "minecraft:fox"
+                }
+            }
+        }
+    }
+}

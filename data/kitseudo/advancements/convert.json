@@ -1,0 +1,28 @@
+{
+    "display": {
+		"icon": {
+			"item": "minecraft:fox_spawn_egg"
+		},
+		"title": "Fox Capture Plan",
+		"description": ["",{"text":"Name a Fox ","color":"#C77AFF"},{"text":"kitseudo","color":"yellow","italic":true}],
+		"show_toast": true,
+		"announce_to_chat": true
+	},
+    "parent": "kitseudo:kitseudo",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:name_tag"
+                    ],
+                    "nbt": "{display:{Name:'{\"text\":\"kitseudo\"}'}}"
+                },
+                "entity": {
+                    "type": "minecraft:fox"
+                }
+            }
+        }
+    }
+}
