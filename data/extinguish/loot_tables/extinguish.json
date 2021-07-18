@@ -10,17 +10,8 @@
                     "name": "minecraft:flower_banner_pattern",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "entity": "this",
-                            "name": {
-                                "text": "Enchanted Scroll",
-                                "color": "yellow",
-                                "italic": false
-                            }
-                        },
-                        {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{}],display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"#7373DD\",\"italic\":false}']}}"
+                            "tag": "{display:{Name:'{\"text\":\"Enchanted Scroll\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"Extinguish\",\"color\":\"#7373DD\",\"italic\":false}']},Enchantments:[{}]}"
                         }
                     ],
                     "conditions": [
