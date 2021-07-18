@@ -3,7 +3,7 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-            "nbt": "{Inventory:[{tag:{display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"gray\",\"italic\":false}']}}}]}",
+            "nbt": "{Inventory:[{tag:{display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"#7373DD\",\"italic\":false}']}}}]}",
             "flags": {
                 "is_on_fire": true
             },
