@@ -1,1 +1,0 @@
-schedule clear extinguish:tick

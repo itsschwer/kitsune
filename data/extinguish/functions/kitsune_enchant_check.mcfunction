@@ -1,1 +1,0 @@
-execute if entity @s[predicate=extinguish:enchantable] if entity @e[type=item,nbt={OnGround:1b},nbt={Item:{id:"minecraft:flower_banner_pattern"}},limit=1,sort=nearest,distance=..1.425,nbt={Item:{tag:{display:{Lore:['{"text":"Extinguish","color":"#7373DD","italic":false}']}}}}] run function extinguish:kitsune_enchant
