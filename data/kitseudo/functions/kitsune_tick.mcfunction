@@ -6,3 +6,6 @@ data merge entity @s {NoAI:1b,InLove:0,Sleeping:1b}
 
 # Release kitsune where appropriate
 execute if entity @s[name="release"] run function kitseudo:kitsune_release
+
+# Try enchanting held item
+execute if data entity @s HandItems[0].id if entity @e[type=item,limit=1,sort=nearest,distance=..1.425] run function #kitseudo:pseudoenchant
