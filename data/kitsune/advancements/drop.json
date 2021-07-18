@@ -1,27 +1,27 @@
 {
     "display": {
 		"icon": {
-			"item": "minecraft:fox_spawn_egg"
+			"item": "minecraft:glow_berries"
 		},
-		"title": "Free Spirit",
-		"description": ["",{"text":"Name a Kitsune ","color":"#C77AFF"},{"text":"release","color":"yellow","italic":true}],
+		"title": "Drop It",
+		"description": ["",{"text":"Feed a Kitsune to tempt it into dropping its held item","color":"#C77AFF"}],
 		"show_toast": true,
 		"announce_to_chat": true
 	},
-    "parent": "kitseudo:convert",
+    "parent": "kitsune:convert",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "item": {
                     "items": [
-                        "minecraft:name_tag"
-                    ],
-                    "nbt": "{display:{Name:'{\"text\":\"release\"}'}}"
+                        "minecraft:sweet_berries",
+                        "minecraft:glow_berries"
+                    ]
                 },
                 "entity": {
                     "type": "minecraft:fox",
-                    "nbt": "{Tags:[\"sks_kitsune\"]}"
+                    "nbt": "{Tags:[\"sks_kitsune\"],HandItems:[{Count:1b}]}"
                 }
             }
         }

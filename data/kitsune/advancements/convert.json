@@ -5,11 +5,11 @@
             "nbt": "{Enchantments:[{}]}"
 		},
 		"title": "Fox Capture Plan",
-		"description": ["",{"text":"Name a Fox ","color":"#C77AFF"},{"text":"kitseudo","color":"yellow","italic":true}],
+		"description": ["",{"text":"Name a Fox ","color":"#C77AFF"},{"text":"kitsune","color":"yellow","italic":true}],
 		"show_toast": true,
 		"announce_to_chat": true
 	},
-    "parent": "kitseudo:kitseudo",
+    "parent": "kitsune:kitsune",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:player_interacted_with_entity",
@@ -18,7 +18,7 @@
                     "items": [
                         "minecraft:name_tag"
                     ],
-                    "nbt": "{display:{Name:'{\"text\":\"kitseudo\"}'}}"
+                    "nbt": "{display:{Name:'{\"text\":\"kitsune\"}'}}"
                 },
                 "entity": [
                     {

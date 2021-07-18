@@ -4,7 +4,7 @@
 			"item": "minecraft:flower_banner_pattern",
             "nbt": "{Enchantments:[{}]}"
 		},
-		"title": "Kitseudo",
+		"title": "kitsune",
 		"frame": "goal",
 		"description": ["",{"text":"Pseudo-enchantments and Kitsune","color":"#C77AFF"}],
 		"show_toast": false,

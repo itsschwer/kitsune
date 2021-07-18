@@ -10,6 +10,6 @@ data modify storage schwer:sks_store Candidate set from storage schwer:sks_store
 execute store result score match sks_score run data modify storage schwer:sks_store Candidate set from entity @s UUID
 
 # `match` is `0`, ∴ *is* thrower and should get advancement
-execute if score match sks_score = 0 sks_score run advancement grant @s only kitseudo:enchant
+execute if score match sks_score = 0 sks_score run advancement grant @s only kitsune:enchant
 
 scoreboard objectives remove sks_score

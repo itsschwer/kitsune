@@ -9,7 +9,7 @@
 		"show_toast": true,
 		"announce_to_chat": true
 	},
-    "parent": "kitseudo:convert",
+    "parent": "kitsune:convert",
     "criteria": {
 		"command": {
 			"trigger": "minecraft:impossible"
