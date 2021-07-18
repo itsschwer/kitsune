@@ -1,1 +1,1 @@
-execute if entity @s[predicate=extinguish:enchantable] if entity @e[type=item,nbt={OnGround:1b},limit=1,sort=nearest,distance=..1.425,nbt={Item:{tag:{display:{Lore:['{"text":"Extinguish","color":"gray","italic":false}']}}}}] run function extinguish:kitsune_enchant
+execute if entity @s[predicate=extinguish:enchantable] if entity @e[type=item,nbt={OnGround:1b},nbt={Item:{id:"minecraft:paper"}},limit=1,sort=nearest,distance=..1.425,nbt={Item:{tag:{display:{Lore:['{"text":"Extinguish","color":"gray","italic":false}']}}}}] run function extinguish:kitsune_enchant
