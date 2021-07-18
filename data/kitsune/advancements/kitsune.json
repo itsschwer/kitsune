@@ -1,12 +1,11 @@
 {
     "display": {
 		"icon": {
-			"item": "minecraft:flower_banner_pattern",
-            "nbt": "{Enchantments:[{}]}"
+			"item": "minecraft:sweet_berries"
 		},
-		"title": "kitsune",
+		"title": "Kitsune",
 		"frame": "goal",
-		"description": ["",{"text":"Pseudo-enchantments and Kitsune","color":"#C77AFF"}],
+		"description": ["",{"text":"Kitsune","color":"#C77AFF"}],
 		"show_toast": false,
 		"announce_to_chat": false
 	},
