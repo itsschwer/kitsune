@@ -9,3 +9,6 @@ execute if entity @s[name="release"] run function kitseudo:kitsune_release
 
 # Try enchanting held item
 execute if data entity @s HandItems[0].id if entity @e[type=item,nbt={OnGround:1b},limit=1,sort=nearest,distance=..1.425] run function #kitseudo:try_enchant
+
+# Particle effect to indicate fox is a kitsune
+particle minecraft:glow ~ ~0.2 ~ 0.3 0.2 0.3 0 1
