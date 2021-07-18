@@ -1,2 +1,2 @@
 tag @s add sks_kitsune
-data remove entity @s CustomName
+data modify entity @s CustomName set value ""
