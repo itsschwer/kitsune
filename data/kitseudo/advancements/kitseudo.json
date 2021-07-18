@@ -1,0 +1,19 @@
+{
+    "display": {
+		"icon": {
+			"item": "minecraft:flower_banner_pattern",
+            "nbt": "{Enchantments:[{}]}"
+		},
+		"title": "Kitseudo",
+		"frame": "goal",
+		"description": ["",{"text":"Pseudo-enchantments and Kitsune","color":"#C77AFF"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "schwer:root",
+    "criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
