@@ -19,20 +19,8 @@
                             }
                         },
                         {
-                            "function": "minecraft:set_lore",
-                            "entity": "this",
-                            "lore": [
-                                {
-                                    "text": "Extinguish",
-                                    "color": "#7373DD",
-                                    "italic": false
-                                }
-                            ],
-                            "replace": false
-                        },
-                        {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{}]}"
+                            "tag": "{Enchantments:[{}],display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"#7373DD\",\"italic\":false}']}}"
                         }
                     ],
                     "conditions": [
