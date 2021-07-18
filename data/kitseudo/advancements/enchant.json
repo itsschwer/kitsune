@@ -5,7 +5,7 @@
             "nbt": "{Enchantments:[{}]}"
 		},
 		"title": "Pseudo Enchanter",
-		"description": ["",{"text":"Enchant a Kitsune's held item using an Enchanted Scroll","color":"#C77AFF"}],
+		"description": ["",{"text":"Enchant a Kitsune's held item using an ","color":"#C77AFF"},{"text":"Enchanted Scroll","color":"yellow"}],
 		"show_toast": true,
 		"announce_to_chat": true
 	},
