@@ -38,11 +38,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "equipment": {
-                    "mainhand": {
-                        "nbt": "{tag:{display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"gray\",\"italic\":false}']}}}"
-                    }
-                }
+                "nbt": "{HandItems:[{tag:{display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"gray\",\"italic\":false}']}}}]}"
             }
         }
     }
