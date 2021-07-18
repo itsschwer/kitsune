@@ -1,0 +1,1 @@
+execute if entity @s[predicate=extinguish:enchantable] if entity @e[type=item,limit=1,sort=nearest,distance=..1.425,nbt={Item:{tag:{display:{Lore:['{"text":"Extinguish","color":"gray","italic":false}']}}}}] run function extinguish:kitsune_enchant
