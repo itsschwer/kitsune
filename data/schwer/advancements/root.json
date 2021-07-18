@@ -4,9 +4,9 @@
 			"item": "minecraft:golden_carrot",
 			"nbt": "{Enchantments:[{}]}"
 		},
-		"title": "Schwer",
+		"title": "Schwer          ",
 		"frame": "goal",
-		"description": ["",{"text":"Here to guide you","color":"#C77AFF"}],
+		"description": ["",{"text":"Here to guide you ☀","color":"#C77AFF"},{"text":"\ngithub.com/itsschwer","color":"blue","italic":true}],
 		"background": "minecraft:textures/block/quartz_block_bottom.png",
 		"show_toast": false,
 		"announce_to_chat": false
