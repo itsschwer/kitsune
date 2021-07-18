@@ -6,6 +6,10 @@
             "equipment": {
                 "mainhand": {
                     "items": [
+                        "minecraft:leather_helmet",
+                        "minecraft:leather_chestplate",
+                        "minecraft:leather_leggings",
+                        "minecraft:leather_boots",
                         "minecraft:chainmail_helmet",
                         "minecraft:chainmail_chestplate",
                         "minecraft:chainmail_leggings",
