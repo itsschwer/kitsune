@@ -1,0 +1,29 @@
+{
+    "display": {
+		"icon": {
+			"item": "minecraft:glow_berries"
+		},
+		"title": "Drop It",
+		"description": ["",{"text":"Feed a Kitsune to tempt it into dropping its held item","color":"#C77AFF"}],
+		"show_toast": true,
+		"announce_to_chat": true
+	},
+    "parent": "kitseudo:convert",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:sweet_berries",
+                        "minecraft:glow_berries"
+                    ]
+                },
+                "entity": {
+                    "type": "minecraft:fox",
+                    "nbt": "{Tags:[\"sks_kitsune\"],HandItems:[{Count:1b}]}"
+                }
+            }
+        }
+    }
+}
