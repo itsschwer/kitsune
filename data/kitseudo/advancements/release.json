@@ -20,7 +20,8 @@
                     "nbt": "{display:{Name:'{\"text\":\"release\"}'}}"
                 },
                 "entity": {
-                    "type": "minecraft:fox"
+                    "type": "minecraft:fox",
+                    "nbt": "{Tags:[\"sks_kitsune\"]}"
                 }
             }
         }

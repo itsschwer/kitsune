@@ -1,7 +1,8 @@
 {
     "display": {
 		"icon": {
-			"item": "minecraft:fox_spawn_egg"
+			"item": "minecraft:fox_spawn_egg",
+            "nbt": "{Enchantments:[{}]}"
 		},
 		"title": "Fox Capture Plan",
 		"description": ["",{"text":"Name a Fox ","color":"#C77AFF"},{"text":"kitseudo","color":"yellow","italic":true}],
@@ -19,9 +20,19 @@
                     ],
                     "nbt": "{display:{Name:'{\"text\":\"kitseudo\"}'}}"
                 },
-                "entity": {
-                    "type": "minecraft:fox"
-                }
+                "entity": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type": "minecraft:fox",
+                                "nbt": "{Tags:[\"sks_kitsune\"]}"
+                            }
+                        }
+                    }
+                ]
             }
         }
     }
