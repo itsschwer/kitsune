@@ -1,0 +1,18 @@
+{
+    "display": {
+		"icon": {
+			"item": "minecraft:flower_banner_pattern",
+            "nbt": "{Enchantments:[{}]}"
+		},
+		"title": "Pseudo Enchanter",
+		"description": ["",{"text":"Enchant a Kitsune's held item using an Enchanted Scroll","color":"#C77AFF"}],
+		"show_toast": true,
+		"announce_to_chat": true
+	},
+    "parent": "kitseudo:convert",
+    "criteria": {
+		"command": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}
