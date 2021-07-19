@@ -7,9 +7,9 @@ A small datapack implementing a new type of interaction with Foxes.
 
 This datapack aims to expand on the ability of Foxes to pick up items by adding a Fox variant *(Kitsune)* that can 'bless' items.
 
-This datapack is intended and designed to be integrated with other datapack as a means of modifying items *(similar to custom crafting with NBT data)*. Example of datapacks that integrate with *kitsune* include *[pseudo-enchantments](https://github.com/itsschwer/pseudo-enchantments)* and *[radiance](https://github.com/itsschwer/radiance)*.
+This datapack is intended and designed to be integrated with other datapack as a means of modifying items *(similar to custom crafting with NBT data)*. Example of datapacks that integrate with ***kitsune*** include ***[pseudo-enchantments](https://github.com/itsschwer/pseudo-enchantments)*** and ***[radiance](https://github.com/itsschwer/radiance)***.
 
-Datapack creators can refer to the *[Integration](#integration)* section to learn how to connect their datapack(s) to *kitsune*.
+Datapack creators can refer to the *[Integration](#integration)* section to learn how to connect their datapack(s) to ***kitsune***.
 
 ## Guide
 *This datapack was developed in 1.17 (`"pack_format": 7`) but should be compatible with versions using an equivalent or greater `pack_format`, barring major changes to commands/datapacks.*
@@ -38,25 +38,43 @@ TBA
 ### Internal
 
 #### `grant_advancement`
-TBA
+Handles the logic for granting the `enchant` advancement to the player who dropped the target item.
+
+Not used in this datapack, intended to be used by other datapacks — see *[Integration](#integration)*.
 
 #### `kitsune_drop`
-TBA
+Forcibly unequips a Kitsune's held item.
+
+Called from `kitsune_tick` on Kitsune that have been fed *(i.e. in 'breeding mode')*.
 
 #### `kitsune_mark`
-TBA
+Converts a Fox into a Kitsune.
+
+Called from `tick` on Foxes named *kitseudo*.
 
 #### `kitsune_release`
-TBA
+Converts a Kitsune back into a Fox.
+
+Called from `kitsune_tick` on Kitsune named *release*.
 
 #### `kitsune_tick`
-TBA
+The update loop for each Kitsune. Handles *(in execution order)*:
+- Forcing Kitsune to drop their held item when fed *(`kitsune_drop`)*
+- Enforcing Kitsune behaviour *(no AI, not in love, sleeping)*
+- Releasing named Kitsune *(`kitsune_release`)*
+- Trying to 'bless' a Kitsune's held item *(`#kitsune:try_enchant`)*
+
+Additionally handles the particle effect differentiating Kitsune from normal Foxes.
 
 #### `load`
-TBA
+Sets up this datapack by starting the `tick` loop.
+
+Called through Minecraft's *`load.json`*.
 
 #### `tick`
-TBA
+The main update loop. Handles marking of named Foxes to be converted into Kitsune and `kitsune_tick`.
+
+Initialises from `load`.
 
 ## References
 *(Roughly in personal use order)*
