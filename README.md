@@ -11,7 +11,7 @@ This datapack is intended and designed to be integrated with other datapack as a
 
 World owners can refer to *[Integration § Datapacks](#datapacks)* to find links to datapacks that connect with ***kitsune***.
 
-Datapack creators can refer to the *[Integration](#integration)* section to learn how to connect their datapack(s) to ***kitsune***.
+Datapack creators can refer to the *[Integration § Guide](#guide-1)* section to learn how to connect their datapack(s) to ***kitsune***.
 
 ## Guide
 *This datapack was developed in 1.17 (`"pack_format": 7`) but should be compatible with versions using an equivalent or greater `pack_format`, barring major changes to commands/datapacks.*
