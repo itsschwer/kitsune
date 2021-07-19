@@ -97,4 +97,7 @@ Initialises from `load`.
 TBA — *guide to adding kitsune interactions from other datapcks*
 
 ### Datapacks
-TBA — *links to datapacks that connect with **kitsune***
+- [pseudo-enchantments](https://github.com/itsschwer/pseudo-enchantments)
+    - *Pseudo-enchant items using Enchanted Scrolls*
+- [radiance](https://github.com/itsschwer/radiance)
+    - *Revert Radiance into Fragile Radiance*
