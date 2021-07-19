@@ -109,7 +109,76 @@ Initialises from `load`.
 ## Integration
 
 ### Guide
-TBA — *guide to adding kitsune interactions from other datapcks*
+To integrate with ***kitsune***, your datapack should contain `data/kitsune/tags/functions/try_enchant.json`. In this file you should include check functions for each blessing interaction you wish to add. For example, from ***[pseudo-enchantments](https://github.com/itsschwer/pseudo-enchantments)***:
+```json
+{
+    "values": [
+        "extinguish:kitsune_enchant_check"
+    ]
+}
+```
+
+`#kitsune:try_enchant` is called on (and at) any Kitsune that is holding an item while there is an item on the ground within 1.425 blocks *(the item pickup range (for players), according to the wiki)* away. Specifically, the selector is:
+```mcfunction
+@e[type=item,nbt={OnGround:1b},limit=1,sort=nearest,distance=..1.425]
+```
+This should be used to target the item in functions called from `#kitsune:try_enchant`.
+
+#### Check function
+Your check function should check if the held item is blessable, preferrably using a predicate like so:
+```json
+[
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "items": [
+                        "<namespace>:<item_id>"
+                    ]
+                }
+            }
+        }
+    }
+]
+```
+You could also include incompatibilities like so:
+```json
+// Continued from above (before closing square bracket)
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{HandItems:[{tag:{display:{Lore:['{\"text\":\"Extinguish\",\"color\":\"#7373DD\",\"italic\":false}']}}}]}"
+            }
+        }
+    }
+]
+```
+Your check function should then have a second if for the target item (blessing material).
+
+A template for a possible check function:
+```mcfunction
+execute if entity @s[predicate=<namespace>:<valid_held_item>] if entity @e[type=item,nbt={OnGround:1b},limit=1,sort=nearest,distance=..1.425,predicate=<namespace>:<valid_blessing_material>] run function <namespace>:<apply_blessing>
+```
+
+#### Blessing function
+How you want your blessing function to work is up to you. If you'd liked to see an example, refer to the one for [`extinguish`](https://github.com/itsschwer/pseudo-enchantments/blob/master/data/extinguish/functions/kitsune_enchant.mcfunction) in the ***[pseudo-enchantments](https://github.com/itsschwer/pseudo-enchantments)*** datapack.
+
+Some suggestions:
+- Append lore to the held item: `data modify entity @s HandItems[0].tag.display.Lore append value <value>`
+- Play the Kitsune blessing sound: `function kitsune:kitsune_bless`
+- Grant the advancement `kitsune:enchant`:
+    ```mcfunction
+    # Grant `kitsune:enchant` advancement
+    data modify storage schwer:sks_store Thrower set from entity @e<item; copy from your check function> Thrower
+    execute as @a run function kitsune:grant_advancement
+    data remove storage schwer:sks_store Thrower
+    ```
+- Consume the blessing material: `kill @e<item; copy from your check function>`
 
 ### Datapacks
 - [pseudo-enchantments](https://github.com/itsschwer/pseudo-enchantments)
