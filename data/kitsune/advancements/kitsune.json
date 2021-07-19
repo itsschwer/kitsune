@@ -5,7 +5,7 @@
 		},
 		"title": "Kitsune",
 		"frame": "goal",
-		"description": ["",{"text":"Kitsune","color":"#C77AFF"}],
+		"description": ["",{"text":"Bless items with new Fox interactions","color":"#C77AFF"}],
 		"show_toast": false,
 		"announce_to_chat": false
 	},
