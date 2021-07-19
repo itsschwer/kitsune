@@ -9,6 +9,8 @@ This datapack aims to expand on the ability of Foxes to pick up items by adding 
 
 This datapack is intended and designed to be integrated with other datapack as a means of modifying items *(similar to custom crafting with NBT data)*. Example of datapacks that integrate with ***kitsune*** include ***[pseudo-enchantments](https://github.com/itsschwer/pseudo-enchantments)*** and ***[radiance](https://github.com/itsschwer/radiance)***.
 
+World owners can refer to *[Integration § Datapacks](#datapacks)* to find links to datapacks that connect with ***kitsune***.
+
 Datapack creators can refer to the *[Integration](#integration)* section to learn how to connect their datapack(s) to ***kitsune***.
 
 ## Guide
@@ -91,4 +93,8 @@ Initialises from `load`.
 
 ## Integration
 
+### Guide
 TBA — *guide to adding kitsune interactions from other datapcks*
+
+### Datapacks
+TBA — *links to datapacks that connect with **kitsune***
