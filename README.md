@@ -169,8 +169,14 @@ execute if entity @s[predicate=<namespace>:<valid_held_item>] if entity @e[type=
 How you want your blessing function to work is up to you. If you'd liked to see an example, refer to the one for [`extinguish`](https://github.com/itsschwer/pseudo-enchantments/blob/master/data/extinguish/functions/kitsune_enchant.mcfunction) in the ***[pseudo-enchantments](https://github.com/itsschwer/pseudo-enchantments)*** datapack.
 
 Some suggestions:
-- Append lore to the held item: `data modify entity @s HandItems[0].tag.display.Lore append value <value>`
-- Play the Kitsune blessing sound: `function kitsune:kitsune_bless`
+- Append lore to the held item:
+    ```mcfunction
+    data modify entity @s HandItems[0].tag.display.Lore append value <value>
+    ```
+- Play the Kitsune blessing sound:
+    ```mcfunction
+    function kitsune:kitsune_bless
+    ```
 - Grant the advancement `kitsune:enchant`:
     ```mcfunction
     # Grant `kitsune:enchant` advancement
