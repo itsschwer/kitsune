@@ -25,7 +25,17 @@ Datapack creators can refer to *[Integration § Guide](#guide-1)* to learn how t
 
 ## Mechanics
 
-TBA
+Kitsune is a custom Fox variant that can be visually identified by the glowing particles they emit. They are unaffected by physical forces *(pushing, gravity, water, etc)*, cannot breed, and always asleep. Players can interact with Kitsune to 'bless' items.
+
+Foxes can be converted into Kitsune by naming them *kitseudo*.
+
+Kitsune can be converted back into foxes by naming them *release*.
+
+Kitsune can be tempted into dropping its held item by being fed berries.
+
+A Kitsune holding an item can bless the item under the right conditions *(e.g. dropping a blessing material near them)*.
+
+*This datapack does not implement any actual blessings, rather, it enables other datapacks to implement their own blessings — see [Integration § Datapacks](#datapacks)*.
 
 ## Functions
 *Split between 'Available' (i.e. fine to call using `/function`) and 'Internal' (not intended to be called by `/function`).*
