@@ -58,6 +58,11 @@ Handles the logic for granting the `enchant` advancement to the player who dropp
 
 Not used in this datapack, intended to be used by other datapacks — see *[Integration](#integration)*.
 
+#### `kitsune_bless`
+Plays sound effects for when a Kitsune blesses an item.
+
+Not used in this datapack, intended to be used by other datapacks — see *[Integration](#integration)*.
+
 #### `kitsune_drop`
 Forcibly unequips a Kitsune's held item.
 
