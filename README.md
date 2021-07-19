@@ -109,7 +109,12 @@ Initialises from `load`.
 ## Integration
 
 ### Guide
-To integrate with ***kitsune***, your datapack should contain `data/kitsune/tags/functions/try_enchant.json`. In this file you should include check functions for each blessing interaction you wish to add. For example, from ***[pseudo-enchantments](https://github.com/itsschwer/pseudo-enchantments)***:
+To integrate with ***kitsune***, your datapack will need, at minimum, three files:
+- `try_enchant.json`, a function tag in the `kitsune` namespace
+- a check function, to check if the blessing should be applied to the held item
+- a blessing function, to apply the blessing to the held item
+
+In `data/kitsune/tags/functions/try_enchant.json` you should include check functions for each blessing interaction you wish to add. For example, from ***[pseudo-enchantments](https://github.com/itsschwer/pseudo-enchantments)***:
 ```json
 {
     "values": [
