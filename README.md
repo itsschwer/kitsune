@@ -65,6 +65,7 @@ Called from `kitsune_tick` on Kitsune named *release*.
 The update loop for each Kitsune. Handles *(in execution order)*:
 - Forcing Kitsune to drop their held item when fed *(`kitsune_drop`)*
 - Enforcing Kitsune behaviour *(no AI, not in love, sleeping)*
+    - *Interestingly, Foxes with `NoAI:1b` still pick up items (but never eat held food). Not sure if this is intentional game behaviour, but it works for now.*
 - Releasing named Kitsune *(`kitsune_release`)*
 - Trying to 'bless' a Kitsune's held item *(`#kitsune:try_enchant`)*
 
