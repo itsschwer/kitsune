@@ -1,4 +1,5 @@
 # kitsune
+[![Datapacks](https://img.shields.io/badge/See_more-datapacks-C7A978.svg)](https://github.com/itsschwer?tab=repositories&q=&type=&language=mcfunction&sort=)
 
 TBA
 
