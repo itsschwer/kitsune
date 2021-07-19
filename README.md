@@ -179,7 +179,6 @@ Some suggestions:
     ```
 - Grant the advancement `kitsune:enchant`:
     ```mcfunction
-    # Grant `kitsune:enchant` advancement
     data modify storage schwer:sks_store Thrower set from entity @e<item; copy from your check function> Thrower
     execute as @a run function kitsune:grant_advancement
     data remove storage schwer:sks_store Thrower
