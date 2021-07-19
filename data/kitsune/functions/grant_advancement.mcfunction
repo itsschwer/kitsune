@@ -13,3 +13,6 @@ execute store result score match sks_score run data modify storage schwer:sks_st
 execute if score match sks_score = 0 sks_score run advancement grant @s only kitsune:enchant
 
 scoreboard objectives remove sks_score
+
+# Clean up `Candidate` (`Thrower` to be cleaned up by caller function)
+data remove storage schwer:sks_store Candidate
