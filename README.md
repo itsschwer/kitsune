@@ -33,7 +33,11 @@ TBA
 ### Available
 
 #### `clear`
-TBA
+Removes the presence of this datapack by:
+- Clearing the scheduled `tick` function
+- Calling `kitsune_release` on all Kitsune
+
+*Note that since it is possible that unloaded chunks contain Kitsune, this can't guarantee to completely remove the presence of this datapack (i.e. some Kitsune may still exist but become non-functional until the datapack is reloaded).*
 
 ### Internal
 
