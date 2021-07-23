@@ -190,7 +190,10 @@ Some suggestions:
     execute as @a run function kitsune:grant_advancement
     data remove storage schwer:sks_store Thrower
     ```
-- Consume the blessing material: `kill @e<item; copy from your check function>`
+- Consume the blessing material:
+    ```mcfunction
+    kill @e<item; copy from your check function>
+    ```
 
 ### Datapacks
 - [pseudo-enchantments](https://github.com/itsschwer/pseudo-enchantments)
