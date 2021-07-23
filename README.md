@@ -105,6 +105,8 @@ Initialises from `load`.
 - [MCStacker](https://mcstacker.net/)
 - [radiance](https://github.com/itsschwer/radiance)
     - *Imitating dropping items from an inventory*
+- [gateways](https://github.com/itsschwer/gateways)
+    - *Granting advancement to player who dropped a specific item*
 
 ## Integration
 
